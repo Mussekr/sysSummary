@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@types/node": "^10.11.7",
-    "process-promises": "^1.0.0",
     "routing-controllers": "^0.7.7",
     "systeminformation": "^3.45.7",
     "typescript": "^3.1.3"
