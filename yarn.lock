@@ -1161,6 +1161,14 @@ process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
 
+process-promises@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/process-promises/-/process-promises-1.0.0.tgz#4518985b9f619fc86025fbb97fa558088b096a87"
+  dependencies:
+    bluebird "^3.0.5"
+    resolve "^1.1.6"
+    stack-trace "0.0.9"
+
 ps-tree@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ps-tree/-/ps-tree-1.1.0.tgz#b421b24140d6203f1ed3c76996b4427b08e8c014"
@@ -1388,7 +1396,7 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-split@^1.0.0, split@^1.0.1:
+split@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/split/-/split-1.0.1.tgz#605bd9be303aa59fb35f9229fbea0ddec9ea07d9"
   dependencies:
@@ -1528,15 +1536,6 @@ touch@^3.1.0:
   resolved "https://registry.yarnpkg.com/touch/-/touch-3.1.0.tgz#fe365f5f75ec9ed4e56825e0bb76d24ab74af83b"
   dependencies:
     nopt "~1.0.10"
-
-ts-process-promises@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/ts-process-promises/-/ts-process-promises-1.0.2.tgz#0839bd5e8ec47d8c4e0db4ed48bac49d5e19bae4"
-  dependencies:
-    bluebird "^3.0.5"
-    resolve "^1.1.6"
-    split "^1.0.0"
-    stack-trace "0.0.9"
 
 tslib@^1.8.0, tslib@^1.8.1:
   version "1.9.3"

@@ -1,5 +1,5 @@
 import { getAllData, cpuTemperature } from 'systeminformation';
-import { exec } from 'ts-process-promises';
+import { exec } from 'process-promises';
 
 getAllData().then((data) => console.log(data)).catch((err) => console.error(err));
 
