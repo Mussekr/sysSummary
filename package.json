@@ -7,7 +7,8 @@
   "author": "Rasmus 'Mussekr' Kröger",
   "license": "MIT",
   "scripts": {
-    "start:dev": "nodemon dist/src/index.js"
+    "start:dev": "nodemon dist/src/index.js",
+    "tsc": "tsc"
   },
   "dependencies": {
     "routing-controllers": "^0.7.7",

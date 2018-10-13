@@ -4,6 +4,8 @@ services:
   syssummary:
     image: syssummary
     build: .
+    volumes:
+      - /var/local:/var/local
     environment:
       NODE_ENV: production
     ports:
