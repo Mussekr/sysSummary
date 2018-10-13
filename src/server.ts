@@ -59,10 +59,11 @@ export default class AppServer {
     }
 
     private loopKuhler(): void {
-        setInterval(() => {
-            const data = getKuhlerData();
-            console.log(data);
-            this.io.emit('kuhler', JSON.stringify(data));
-        }, 1000);
+        setInterval(() =>
+            getKuhlerData().then((data) => {
+                console.log(data);
+                this.io.emit('kuhler', JSON.stringify(data));
+            }).catch((err) => console.log(err))
+        , 1000);
     }
 }

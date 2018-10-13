@@ -1,6 +1,6 @@
 import * as childProcess from 'child_process';
 
-export default function getKuhlerData(): object {
+export default function getKuhlerData(): Promise<object> {
     return getRawData()
     .then((data) => {
         const fanRPM = /Fan RPM : (\d.+$)/gm.exec(data);
