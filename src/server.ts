@@ -16,6 +16,7 @@ export default class AppServer {
         this.createServer();
         this.sockets();
         this.listen();
+        this.loopKuhler();
     }
 
     public getApp(): express.Application {
@@ -57,4 +58,9 @@ export default class AppServer {
         });
     }
 
+    private loopKuhler(): void {
+        setInterval(() => {
+            this.io.emit('kuhler', getKuhlerData());
+        }, 1000);
+    }
 }
