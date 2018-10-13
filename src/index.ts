@@ -1,12 +1,7 @@
 import { getAllData, cpuTemperature } from 'systeminformation';
-import * as childProcess from 'child_process';
+import getKuhlerData from './kuhlerData';
 getAllData().then((data) => console.log(data)).catch((err) => console.error(err));
-childProcess.exec('/var/local/kuhler_ctl -l', (err, stdout, stderr) => {
-    if (err) {
-        console.error(err);
-        return;
-    }
-    console.log(stdout);
-    console.log(stderr);
-});
+
+const kuhlerData = getKuhlerData();
+console.log(kuhlerData);
 // cpuTemperature().then((data) => console.log(data)).catch((err) => console.error(err));
