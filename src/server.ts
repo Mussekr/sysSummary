@@ -49,7 +49,7 @@ export default class AppServer {
             socket.on('kuhler', (m) => {
                 const kuhlerData = getKuhlerData();
                 console.log('[server](message): %s', JSON.stringify(m));
-                this.io.emit('kuhler', kuhlerData);
+                this.io.emit('kuhler', JSON.stringify(kuhlerData));
             });
 
             socket.on('disconnect', () => {
@@ -60,7 +60,9 @@ export default class AppServer {
 
     private loopKuhler(): void {
         setInterval(() => {
-            this.io.emit('kuhler', getKuhlerData());
+            const data = getKuhlerData();
+            console.log(data);
+            this.io.emit('kuhler', JSON.stringify(data));
         }, 1000);
     }
 }
