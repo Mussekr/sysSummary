@@ -1,0 +1,22 @@
+{
+  "name": "sysSummary",
+  "version": "1.0.0",
+  "description": "System usage summary",
+  "main": "index.js",
+  "repository": "https://github.com/mussekr/syssummary",
+  "author": "Rasmus 'Mussekr' Kröger",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon dist/src/index.js"
+  },
+  "dependencies": {
+    "routing-controllers": "^0.7.7",
+    "systeminformation": "^3.45.7",
+    "typescript": "^3.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "@types/systeminformation": "^3.23.0",
+    "tslint": "^5.11.0"
+  }
+}
